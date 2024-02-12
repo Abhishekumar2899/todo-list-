@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    background-color: black;
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#nav{
+    /* border: 1px solid red; */
+    border-bottom: 5px solid rgb(158, 151, 148);
+}
+#nav>a{
+    color: white;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#usercreate{
+   background-color: black;
+   height: 90vh;
+   width: 100%;
+   display: flex;
+   color: white;
+   justify-content: space-around;
+   align-items: center;
+
+   
+}
+#usercreate>form{
+    border: 1px solid white;
+    width: 20%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+#usercreate>form>input{
+     background-color: black;
+     color: white;
+     border: none;
+     border-bottom: 1px solid red;
+     outline: none; 
+}
+#usercreate>form>button{
+    margin: 20px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: none;
+}
+#usercreate>form>button:hover{
+    background-color: burlywood;
+    color: black;
+    transform:scale(1.1);
+    transition: 5ms;
+}
+#usersPage{
+    background-color: rgb(168, 70, 70);
+    height: 100vh;
+    width: 100%;    
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+#usersPage>table{
+    border: 3px solid rgb(0, 0, 0);
+    height: 45%;
+    width: 18%; 
+    margin-top: 80px;
+    background-color: rgb(82, 53, 53);
+    border-radius: 30px;
+}
+#usersPage>table:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+#usersPage>table>tr>td{
+    width: 20px;
+    color: white;
+    text-align: center;
+    align-items: center;
+}
+#usersPage>table>tr>td>button{
+    padding: 3px 13px;
+    background-color:burlywood;
+    border: none;
+    border-radius: 10px; 
+}
+#usersPage>table>tr>td>button>a{
+    text-decoration: none;
+    color: black;
+
+}
+#usersPage>table>tr>td>button:hover{
+    background-color:darkslategray;
+}
+@media only screen and (max-width:300px){
+    #usersPage{
+        background-color: rgb(168, 70, 70);
+        height: 100vh;
+        width: 100%;    
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+    }
+
+ 
+    
+    #usersPage>table{
+        border: 3px solid rgb(0, 0, 0);
+        height: 40%;
+        width:  60%; 
+        margin-top: 80px;
+        background-color: rgb(82, 53, 53);
+        border-radius: 30px;
+    }
+    body{
+        background-color: rgb(168, 70, 70)
+    }
+
+    #usercreate>form>input{
+         background-color: black;
+         color: white;
+         border: none;
+         border-bottom: 1px solid red;
+         outline: none; 
+    }
+
+    #usercreate>form{
+        border: 1px solid white;
+        width: 100vw;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+    }
+}
+@media only screen and (max-width:600px){
+
+    #usersPage{
+        background-color: rgb(168, 70, 70);
+        height: 100vh;
+        width: 100%;    
+        display: flex;
+        flex-wrap:wrap;
+        justify-content: space-evenly;
+    }
+
+    
+    #usercreate>form{
+        border: 1px solid white;
+        width: 50%;
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        border-radius: 20px;
+    }
+    #usersPage>table{
+        border: 3px solid rgb(0, 0, 0);
+        height: 34%;
+        width:  35%; 
+        margin-top: 80px;
+        background-color: rgb(82, 53, 53);
+        border-radius: 30px;
+    }
+    body{
+        background-color: rgb(168, 70, 70)
+    }
+}
+
+
